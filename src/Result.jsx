@@ -22,9 +22,9 @@ const Result = ({ correctCount, correctAnswers, wrongCount, wrongAnswers, onRetr
         <div>
           <p>Correct Answers:</p>
           <ul>
-            {correctAnswers.map(({ number, multiplier, correctAnswer }, index) => (
+            {correctAnswers.map(({ number, correctAnswer }, index) => (
               <li key={index}>
-                Cube of {number} (Multiplier {multiplier}) is {correctAnswer}
+                Cube of {number}  is {correctAnswer}
               </li>
             ))}
           </ul>
